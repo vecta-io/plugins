@@ -1,2 +1,2 @@
 # Plugins repository
-To store vecta's public plugins.
+All vecta's public plugins are here.
