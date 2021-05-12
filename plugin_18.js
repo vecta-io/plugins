@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_18.js
-try{
 Vecta.dialog({
     title: 'Polygon',
     content: [
@@ -114,6 +113,3 @@ function rotatePoint (x, y, cx, cy, angle) {
         return {x: x, y: y};
     }
 }
-
-}catch(e){console.warn("Error found in plugin Polygon");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
