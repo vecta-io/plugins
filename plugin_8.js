@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_8.js
-try{
 function material_icons() {
     var material_cats = ["action", "av", "communication", "content", "device", "editor", "file", "hardware", "image", "maps", "navigation", "notification", "places","social", "toggle"],
         material_icons = {},
@@ -104,7 +103,7 @@ function material_icons() {
                     $content.find('li.Active\\.cls').removeClass('Active.cls');
                 }
                
-                $input.on('keyup paste.plugin_8', function() {
+                $input.on('keyup paste', function() {
                     var token = $input.val().trim();
 
                     clearTimeout(delay);
@@ -271,5 +270,3 @@ function material_icons() {
 }
 
 material_icons();
-}catch(e){console.warn("Error found in plugin Material Design icons");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
