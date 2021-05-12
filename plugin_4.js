@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_4.js
-try{
 Vecta.dialog({
     title: 'Scatter shapes',
     buttons: [{ default: true, label: 'Draw'}, { cancel: true, label: 'Cancel'}],
@@ -74,6 +73,3 @@ Vecta.dialog({
 function random(min, max) {
     return Math.random() * (max - min) + min;
 }
-
-}catch(e){console.warn("Error found in plugin Scatterer");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
