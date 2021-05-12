@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_14.js
-try{
 generateBOM();
 
 function generateBOM() {
@@ -294,5 +293,3 @@ function generateBOM() {
         $content.find('#addAggregate\\.id').before($agg);
     }
 }
-}catch(e){console.warn("Error found in plugin Generate Bill of Materials");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
