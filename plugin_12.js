@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_12.js
-try{
 shapeSpacer();
 
 function shapeSpacer(){
@@ -82,5 +81,3 @@ function shapeSpacer(){
     });
 
 }
-}catch(e){console.warn("Error found in plugin Spacer");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
