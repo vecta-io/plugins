@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_19.js
-try{
 function glowGenerator() {
     Vecta.dialog({
         title: 'Ellipse Glow Generator',
@@ -59,6 +58,3 @@ function glowGenerator() {
 }
 
 glowGenerator();
-
-}catch(e){console.warn("Error found in plugin Glow Effect");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
