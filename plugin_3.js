@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_3.js
-try{
 var width = Vecta.activePage.widthU(),
     height = Vecta.activePage.heightU(),
     branch_length = height / 21;
@@ -53,5 +52,3 @@ function rotatePoint(x, y, cx, cy, angle) {
 function radius (angle) {
     return angle * Math.PI / 180;
 }
-}catch(e){console.warn("Error found in plugin Draw fractal tree");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
