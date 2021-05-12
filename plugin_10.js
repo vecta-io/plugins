@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_10.js
-try{
 drawProtractor();
 
 function drawProtractor(){
@@ -69,5 +68,3 @@ function drawProtractor(){
 
     });
 }
-}catch(e){console.warn("Error found in plugin Protractor");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
