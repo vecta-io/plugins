@@ -1,6 +1,5 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_1.js
-try{
-Vecta.on('fileDropped.Vecta.plugin_1', function(e, evt) {
+Vecta.on('fileDropped.Vecta', function(e, evt) {
     var type = evt.file.type || (evt.file.name || '').split('.').pop(); //get file type
 
     switch (type) {
@@ -29,5 +28,3 @@ function drawTSV(point, str) {
 		y += height;
     });
 }
-}catch(e){console.warn("Error found in plugin TSV to table");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
