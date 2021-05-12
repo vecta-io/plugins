@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_6.js
-try{
 var rows = {},
 	shape;
 
@@ -142,6 +141,3 @@ function drawLineChart(row1, row2, x, y, width, height, curve) {
 function showUsageDialog($content){
     $content.append('<img src="/app/images/using-the-line-chart-plugin.svg">').css({width: 540, height: 170});
 }
-
-}catch(e){console.warn("Error found in plugin Line chart");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
