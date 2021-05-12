@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_7.js
-try{
 var shape, rows = {};
 
 Vecta.dialog({
@@ -236,5 +235,3 @@ function rotatePoint(x, y, cx, cy, angle) {
 function showUsageDialog($content) {
     $content.append('<img src="/app/images/using-the-pie-chart-plugin.svg">').css({width: 540, height: 160});
 }
-}catch(e){console.warn("Error found in plugin Pie Chart");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
