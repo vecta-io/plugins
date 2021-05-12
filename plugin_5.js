@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_5.js
-try{
 function sharpener() {
     var page = Vecta.activePage,
         shapes = page.shapes(),
@@ -63,5 +62,3 @@ function sharpener() {
 
 
 sharpener();
-}catch(e){console.warn("Error found in plugin Sharpener");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
