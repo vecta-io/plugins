@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_13.js
-try{
 (function(){
     Vecta.dialog({
         title: 'Box Splitter',
@@ -142,5 +141,3 @@ try{
     });
 
 })();
-}catch(e){console.warn("Error found in plugin Splitter");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
