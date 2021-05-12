@@ -1,6 +1,5 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_2.js
-try{
-Vecta.on('fileDropped.Vecta.plugin_2', function(e, evt) {
+Vecta.on('fileDropped.Vecta', function(e, evt) {
     var type;
     
     //get file type
@@ -44,5 +43,3 @@ function drawJSON(point, json) {
         });
 	}
 }
-}catch(e){console.warn("Error found in plugin JSON to tree");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
