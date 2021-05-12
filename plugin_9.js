@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_9.js
-try{
 function fa_icons() {
     var fa_cats = ['brands', 'solid'],
         fa_icons = {},
@@ -93,7 +92,7 @@ function fa_icons() {
                     $content.find('li.Active\\.cls').removeClass('Active.cls');
                 }
                 
-                $input.on('keyup paste.plugin_9', function() {
+                $input.on('keyup paste', function() {
                     clearTimeout(delay);
                     delay = setTimeout(function() {
                         var token = $input.val().trim();
@@ -257,5 +256,3 @@ function fa_icons() {
 }
 
 fa_icons();
-}catch(e){console.warn("Error found in plugin Font Awesome icons");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
