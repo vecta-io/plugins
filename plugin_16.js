@@ -1,6 +1,5 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_16.js
-try{
-Vecta.on('fileDropped.Vecta.plugin_16', function(e, evt) {
+Vecta.on('fileDropped.Vecta', function(e, evt) {
     var type;
     
     //get file type
@@ -144,7 +143,7 @@ function createDownloadJSONButton() {
         $download.attr('href', data);
         $download.attr('download', 'sample.json');
         
-        $download.on('click.Map.plugin_16', function() {
+        $download.on('click.Map', function() {
                 $div.remove();
             	$download.off('click.Map');
         });
@@ -167,5 +166,3 @@ function getColor(d) {
 
 
 createDownloadJSONButton();
-}catch(e){console.warn("Error found in plugin Choropleth Map");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
