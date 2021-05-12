@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_17.js
-try{
 var $file_input = $('<input type="file" accept=".tsv,.csv">');
 
 Vecta.dialog({
@@ -109,6 +108,3 @@ function table(data, sep_name, size) {
         Vecta.hideMessage();
     });
 }
-
-}catch(e){console.warn("Error found in plugin Tables");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
