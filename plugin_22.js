@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_22.js
-try{
 
 //Pipe generator
 
@@ -304,5 +303,3 @@ Vecta.dialog({
         }
     }
 });
-}catch(e){console.warn("Error found in plugin Pipe Generator");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
