@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_11.js
-try{
 transposeShapes();
 
 function transposeShapes(){
@@ -45,5 +44,3 @@ function transposeShapes(){
         return offset;
     }
 }
-}catch(e){console.warn("Error found in plugin Transpose");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
