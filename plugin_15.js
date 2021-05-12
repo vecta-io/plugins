@@ -1,5 +1,4 @@
 //https://github.com/vecta-io/plugins/blob/main/plugin_15.js
-try{
 (function(){
 
     var shapes = Vecta.selection.shapes();
@@ -117,6 +116,3 @@ try{
 
 
 
-
-}catch(e){console.warn("Error found in plugin Bullet List");console.error(e); }
-Vecta.trigger("pluginStopped.Vecta.Plugin");
